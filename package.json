@@ -6,6 +6,7 @@
   "scripts": {
     "start": "yarn run dev",
     "dev": "cross-env ELEVENTY_ENV=dev eleventy --serve",
+    "debug": "cross-env DEBUG=Eleventy* ELEVENTY_ENV=dev eleventy",
     "build": "cross-env ELEVENTY_ENV=prod eleventy",
     "test": "yarn run build",
     "lint": "eslint . --ext .js --cache"
